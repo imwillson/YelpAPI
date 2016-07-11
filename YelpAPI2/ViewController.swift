@@ -7,19 +7,40 @@
 //
 
 import UIKit
+import Foundation
+import OAuthSwift
+import SwiftyJSON
 
 class ViewController: UIViewController {
-
+    
+    
+    let client = YelpAPIClient()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        
+        //first parameter, allows for us to change up the search results
+        let urlParams = [
+            "location":"Chinatown",
+            "term" :  "Restaurants"]
+        
+        
+        client.searchPlacesWithParameters(urlParams, successSearch: { (data, response) in
+            let json = JSON(data: data)
+            print("SUCESS")
+            print(json)
+            }, failureSearch: { (error) in
+                print("ERROR")
+                print(error)
+        })
+        
     }
-
+    
+    
+    // do i need this?
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
 }
-
