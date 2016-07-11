@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>SchemeUserState</key>
+	<dict>
+		<key>YelpAPI2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>90C5A6F31D34223B00BD379C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90C5A7071D34223B00BD379C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>90C5A7121D34223B00BD379C</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+	</dict>
+</dict>
+</plist>
